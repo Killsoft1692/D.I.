@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+  <services>
+      <service id="acme.app.helper.test_helper" class="Acme\AppBundle\Helper\TestHelper">
+
+      </service>
+
+      <service id="acme.app.helper.test_helper2" class="Acme\AppBundle\Helper\TestHelper2">
+          <argument type="service" id="acme.app.helper.test_helper"/>
+
+      </service>
+  </services>
+
+</container>
+
